@@ -1,0 +1,50 @@
+﻿<Window
+    x:Class="CalculatorWindow.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Calculator"
+    Width="350"
+    Height="250">
+    <Grid>
+        <TextBox
+            x:Name="Number1"
+            Width="120"
+            Margin="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <TextBox
+            x:Name="Number2"
+            Width="120"
+            Margin="10,40,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+
+        <ComboBox
+            x:Name="OperationComboBox"
+            Width="120"
+            Margin="140,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <ComboBoxItem Content="Add" />
+            <ComboBoxItem Content="Subtract" />
+            <ComboBoxItem Content="Multiply" />
+            <ComboBoxItem Content="Divide" />
+        </ComboBox>
+
+        <Button
+            Width="100"
+            Margin="10,40,10,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Content="Calculate"
+            Click="Button_Click"/>
+        <Label
+            x:Name="ResultLabel"
+            Width="200"
+            Height="30"
+            Margin="10,0,0,10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom" />
+    </Grid>
+</Window>
+
